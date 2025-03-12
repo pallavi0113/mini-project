@@ -1,0 +1,114 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans:ital,wght@0,100..900;1,100..900&display=swap');
+
+*{
+    padding: 0;
+    margin: 0;
+    text-decoration: none;
+}
+body{
+    font-family: 'Noto Sans Tc', sans-serif;
+    background: #dedede;
+}
+.click, .popup_box{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    -webkit-transform: translate(-50%,-50%);
+    -moz-transform: translate(-50%,-50%);
+    -ms-transform: translate(-50%,-50%);
+    -o-transform: translate(-50%,-50%);
+    border-radius: 5px;
+    -webkit-border-radius: 5px;
+    -moz-border-radius: 5px;
+    -ms-border-radius: 5px;
+    -o-border-radius: 5px;
+}
+.click{
+    background: #2981bc;
+    color: white;
+    font-size: 22px;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: bold;
+    text-align: center;
+    padding: 10px 15px;
+    border: 1px solid #0059b3;
+}
+.popup_box{
+    user-select: none;
+    width: 400px;
+    background: #f2f2f2;
+    text-align: center;
+    align-items: center;
+    padding: 40px;
+    border:1px solid #b3b3b3;
+    box-shadow: 0px 5px 10px rgba(0,0,0,0.2);
+    z-index: 9999;
+    opacity: 0;
+    pointer-events: none;
+    transition: all 0.3s ease-in-out;
+    -webkit-transition: all 0.3s ease-in-out;
+    -moz-transition: all 0.3s ease-in-out;
+    -ms-transition: all 0.3s ease-in-out;
+    -o-transition: all 0.3s ease-in-out;
+}
+.popup_box i{
+    font-size: 60px;
+    color: #eb9447;
+    border: 5px solid #eb9447;
+    padding: 20px 40px;
+    border-radius: 50%;
+    -webkit-border-radius: 50%;
+    -moz-border-radius: 50%;
+    -ms-border-radius: 50%;
+    -o-border-radius: 50%;
+    margin: -10px 0 20px 0;
+}
+.popup_box h1{
+    font-size: 30px;
+    color: #1b2631;
+    margin-bottom: 5px;
+
+}
+.popup_box label{
+    font-size: 23px;
+    color: #404040;
+    
+}
+.popup_box .btns{
+    margin: 40px 0 0 0;
+}
+.btns .btn1, .btns .btn2{
+    background: #999999;
+    color: white;
+    font-size: 18px;
+    padding: 10px 13px;
+    border: 1px solid #808080;
+    border-radius: 5px;
+    -webkit-border-radius: 5px;
+    -moz-border-radius: 5px;
+    -ms-border-radius: 5px;
+    -o-border-radius: 5px;
+}
+.btns .btn2{
+    background: #ff3333;
+    margin-left: 20px;
+    border: 1px solid #cc0000;
+}
+.btn1:hover{
+    transition: 0.5s;
+    -webkit-transition: 0.5s;
+    -moz-transition: 0.5s;
+    -ms-transition: 0.5s;
+    -o-transition: 0.5s;
+    background: #8c8c8c;
+}
+.btn2:hover{
+    transition: 0.5s;
+    -webkit-transition: 0.5s;
+    -moz-transition: 0.5s;
+    -ms-transition: 0.5s;
+    -o-transition: 0.5s;
+    background: #e60000;
+}
