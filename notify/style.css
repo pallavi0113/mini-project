@@ -1,0 +1,87 @@
+.container{
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%,-50%);
+    -webkit-transform: translate(-50%,-50%);
+    -moz-transform: translate(-50%,-50%);
+    -ms-transform: translate(-50%,-50%);
+    -o-transform: translate(-50%,-50%);
+    font-family: Arial, Helvetica, sans-serif;
+    text-align: center;
+}
+.container .fa-brands{
+    color: blue;
+    font-size: 80px;
+}
+.container .notify::before{
+    position: absolute;
+    content: attr(data-count);
+    /*content: '1';
+    */top: 0px;
+    right: -3px;
+    font-size: 30px;
+    font-weight: bold;
+    color: white;
+    padding: 5px 12px;
+    /*background-color: #7D0A0A;
+    *//*background-image: linear-gradient(to right, #371505, #5f1e0b, #8b260d, #ba2b0f, #eb2c12);
+    */background-image: linear-gradient(to right, #fa1f0a, #f6230c, #f2260e, #ef2910, #eb2c12);
+    border-radius: 50px;
+    -webkit-border-radius: 50px;
+    -moz-border-radius: 50px;
+    -ms-border-radius: 50px;
+    -o-border-radius: 50px;
+    line-height: 100%;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+    opacity: 0;
+    transition: opacity 0.1s ease-out;
+    -webkit-transition: opacity 0.1s ease-out;
+    -moz-transition: opacity 0.1s ease-out;
+    -ms-transition: opacity 0.1s ease-out;
+    -o-transition: opacity 0.1s ease-out;
+    animation: animate 0.9s ease-out infinite;
+    -webkit-animation: animate 0.9s ease-out infinite alternate;
+}
+@keyframes animate{
+    0%{
+        transform:scale(1);
+        -webkit-transform:scale(1);
+        -moz-transform:scale(1);
+        -ms-transform:scale(1);
+        -o-transform:scale(1);
+    }
+    100%{
+        transform:scale(1.09);
+        -webkit-transform:scale(1.09);
+        -moz-transform:scale(1.09);
+        -ms-transform:scale(1.09);
+        -o-transform:scale(1.09);
+    }
+}
+.notify.add-numb::before{
+    opacity: 1;
+}
+.container .btn{
+    position: absolute;
+    left: -25px;
+    top: 100px;
+    height: 40px;
+    width: 120px;
+    color: white;
+    font-size: 15px;
+    font-weight: bold;
+    border: 1px solid #111755;
+    background: #1A237E;
+    border-radius: 3px;
+    -webkit-border-radius: 3px;
+    -moz-border-radius: 3px;
+    -ms-border-radius: 3px;
+    -o-border-radius: 3px;
+    line-height: 40px;
+    outline: none;
+    cursor: pointer;
+}
+.container .btn:hover{
+    background: #161d6a;
+}
