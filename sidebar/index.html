@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css" integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <script src="https://code.jquery.com/jquery-3.7.1.js" integrity="sha256-eKhayi8LEQwp4NKxN+CfCh+3qOVUtJn3QNZ0TciWLP4=" crossorigin="anonymous"></script>
+    <script>
+       $(document).ready(function(){
+          $('i').click(function(){
+            $('ul').toggleClass('ul_show');
+            $('section').toggleClass('slide_image');
+          });
+          $('li').click(function(){
+            $(this).addClass('active').siblings().removeClass('active');
+          })
+       });
+    </script>
+</head>
+<body>
+    <ul>
+        <li class="active"><a href="#">Home</a></li>
+        <li ><a href="#about">About</a></li>
+        <li><a href="#portfolio">Portfolio</a></li>
+        <li><a href="#gallery">Gallery</a></li>
+        <li><a href="#services">Services</a></li>
+        <li><a href="#feedback">Feedback</a></li>
+        <li><a class="contact" href="#contact">Contact</a></li>
+    </ul>
+    <section>
+        <i class="fa-solid fa-bars"></i>
+        <div class="sec1"></div>
+            <h1 id="about">About Section</h1>
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+                Commodi accusantium aperiam ad laboriosam rem eligendi, 
+                odio asperiores! Quae velit tempora dolore sit animi
+                voluptatibus dignissimos odio obcaecati sequi commodi esse
+                adipisci, at expedita ut, iure ex. Quasi soluta natus 
+                facilis corporis minima, iure libero voluptatum repellendus.
+                Ipsam debitis rem doloremque saepe sapiente facere quisquam
+                sit perferendis laborum, doloribus officia, dignissimos, 
+                molestiae id ab facilis! Laborum ea debitis ab fuga eius 
+                quidem dignissimos unde maiores ducimus rerum, accusamus 
+                illum reiciendis fugiat illo, dolor necessitatibus tempore. 
+                Consectetur, dicta ratione sequi veniam maiores ut numquam 
+                accusantium, natus deleniti nemo voluptates! Consequatur, magnam esse.
+            </p>
+            <div class="sec2"></div>
+            <h1 id="portfolio">Portfolio Section</h1>
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+                Commodi accusantium aperiam ad laboriosam rem eligendi, 
+                odio asperiores! Quae velit tempora dolore sit animi
+                voluptatibus dignissimos odio obcaecati sequi commodi esse
+                adipisci, at expedita ut, iure ex. Quasi soluta natus 
+                facilis corporis minima, iure libero voluptatum repellendus.
+                Ipsam debitis rem doloremque saepe sapiente facere quisquam
+                sit perferendis laborum, doloribus officia, dignissimos, 
+                molestiae id ab facilis! Laborum ea debitis ab fuga eius 
+                quidem dignissimos unde maiores ducimus rerum, accusamus 
+                illum reiciendis fugiat illo, dolor necessitatibus tempore. 
+                Consectetur, dicta ratione sequi veniam maiores ut numquam 
+                accusantium, natus deleniti nemo voluptates! Consequatur, magnam esse.
+            </p>
+            <div class="sec3"></div>
+            <h1 id="gallery">Gallery Section</h1>
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+                Commodi accusantium aperiam ad laboriosam rem eligendi, 
+                odio asperiores! Quae velit tempora dolore sit animi
+                voluptatibus dignissimos odio obcaecati sequi commodi esse
+                adipisci, at expedita ut, iure ex. Quasi soluta natus 
+                facilis corporis minima, iure libero voluptatum repellendus.
+                Ipsam debitis rem doloremque saepe sapiente facere quisquam
+                sit perferendis laborum, doloribus officia, dignissimos, 
+                molestiae id ab facilis! Laborum ea debitis ab fuga eius 
+                quidem dignissimos unde maiores ducimus rerum, accusamus 
+                illum reiciendis fugiat illo, dolor necessitatibus tempore. 
+                Consectetur, dicta ratione sequi veniam maiores ut numquam 
+                accusantium, natus deleniti nemo voluptates! Consequatur, magnam esse.
+            </p>
+            <div class="sec4"></div>
+            <h1 id="services">Services Section</h1>
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+                Commodi accusantium aperiam ad laboriosam rem eligendi, 
+                odio asperiores! Quae velit tempora dolore sit animi
+                voluptatibus dignissimos odio obcaecati sequi commodi esse
+                adipisci, at expedita ut, iure ex. Quasi soluta natus 
+                facilis corporis minima, iure libero voluptatum repellendus.
+                Ipsam debitis rem doloremque saepe sapiente facere quisquam
+                sit perferendis laborum, doloribus officia, dignissimos, 
+                molestiae id ab facilis! Laborum ea debitis ab fuga eius 
+                quidem dignissimos unde maiores ducimus rerum, accusamus 
+                illum reiciendis fugiat illo, dolor necessitatibus tempore. 
+                Consectetur, dicta ratione sequi veniam maiores ut numquam 
+                accusantium, natus deleniti nemo voluptates! Consequatur, magnam esse.
+            </p>
+            <div class="sec5"></div>
+            <h1 id="feedback">Feedback Section</h1>
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+                Commodi accusantium aperiam ad laboriosam rem eligendi, 
+                odio asperiores! Quae velit tempora dolore sit animi
+                voluptatibus dignissimos odio obcaecati sequi commodi esse
+                adipisci, at expedita ut, iure ex. Quasi soluta natus 
+                facilis corporis minima, iure libero voluptatum repellendus.
+                Ipsam debitis rem doloremque saepe sapiente facere quisquam
+                sit perferendis laborum, doloribus officia, dignissimos, 
+                molestiae id ab facilis! Laborum ea debitis ab fuga eius 
+                quidem dignissimos unde maiores ducimus rerum, accusamus 
+                illum reiciendis fugiat illo, dolor necessitatibus tempore. 
+                Consectetur, dicta ratione sequi veniam maiores ut numquam 
+                accusantium, natus deleniti nemo voluptates! Consequatur, magnam esse.
+            </p>
+            <div class="sec6"></div>
+            <h1 id="contact">contact Section</h1>
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+                Commodi accusantium aperiam ad laboriosam rem eligendi, 
+                odio asperiores! Quae velit tempora dolore sit animi
+                voluptatibus dignissimos odio obcaecati sequi commodi esse
+                adipisci, at expedita ut, iure ex. Quasi soluta natus 
+                facilis corporis minima, iure libero voluptatum repellendus.
+                Ipsam debitis rem doloremque saepe sapiente facere quisquam
+                sit perferendis laborum, doloribus officia, dignissimos, 
+                molestiae id ab facilis! Laborum ea debitis ab fuga eius 
+                quidem dignissimos unde maiores ducimus rerum, accusamus 
+                illum reiciendis fugiat illo, dolor necessitatibus tempore. 
+                Consectetur, dicta ratione sequi veniam maiores ut numquam 
+                accusantium, natus deleniti nemo voluptates! Consequatur, magnam esse.
+            </p>
+            <div class="sec7"></div>
+    </section>
+    
+</body>
+</html>

@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hide Navbar on Scroll</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <nav>
+        <label class="logo">DesignX</label>
+        <ul>
+            <li><a href="#">Home</a></li>
+            <li><a href="#">About</a></li>
+            <li><a href="#">Services</a></li>
+            <li><a href="#">Contact</a></li>
+            <li><a href="#">Feedback</a></li>
+        </ul>
+    </nav>
+    <div class="sec1"></div>
+    <h1>About Section</h1>
+    <p>
+        Lorem ipsum dolor, sit amet consectetur adipisicing elit. Provident debitis modi voluptatibus reprehenderit! Voluptatum voluptatem officia iste, 
+        vel cum non cupiditate officiis molestias sit quisquam quis, nihil mollitia similique quo placeat, nam sapiente est accusamus quam? Ex placeat 
+        est molestiae nam maiores voluptatum, veniam harum recusandae inventore totam architecto consequatur, iure fuga fugit? Fugit non, architecto ipsam
+        dolore voluptates impedit. Quisquam iure accusamus corporis veritatis nihil esse fugiat possimus, adipisci officiis sequi repellendus culpa 
+        nam vitae, quae nulla soluta! Ea mollitia architecto sequi placeat provident eligendi excepturi dolor, dolorem, magnam et est nostrum 
+        temporibus harum doloremque voluptates, unde animi quia nesciunt. Quisquam velit minima similique laboriosam deserunt quod
+        omnis explicabo recusandae corrupti hic id aperiam nobis repellat inventore odio at dignissimos quibusdam, autem labore soluta, 
+        ducimus voluptates tempora! Reiciendis, sunt. Iste beatae aspernatur ut natus minus nulla dignissimos cumque ea delectus consequuntur
+        perferendis, sunt dolor consequatur aperiam laborum sit asperiores quos deserunt expedita blanditiis, corporis cum. Quam libero
+        laudantium alias porro quibusdam qui aut neque rerum rem. Nam voluptate dolor itaque esse fugit doloribus optio quas reiciendis
+        corrupti temporibus. Temporibus, dignissimos error architecto deleniti minima praesentium modi officiis quisquam aspernatur numquam
+        saepe natus provident iure possimus fugiat laboriosam cupiditate ex?
+    </p>
+    <div class="sec2"></div>
+    <h1> Services Section</h1>
+    <p>
+        Lorem ipsum dolor, sit amet consectetur adipisicing elit. Provident debitis modi voluptatibus reprehenderit! Voluptatum voluptatem officia iste, 
+        vel cum non cupiditate officiis molestias sit quisquam quis, nihil mollitia similique quo placeat, nam sapiente est accusamus quam? Ex placeat 
+        est molestiae nam maiores voluptatum, veniam harum recusandae inventore totam architecto consequatur, iure fuga fugit? Fugit non, architecto ipsam
+        dolore voluptates impedit. Quisquam iure accusamus corporis veritatis nihil esse fugiat possimus, adipisci officiis sequi repellendus culpa 
+        nam vitae, quae nulla soluta! Ea mollitia architecto sequi placeat provident eligendi excepturi dolor, dolorem, magnam et est nostrum 
+        temporibus harum doloremque voluptates, unde animi quia nesciunt. Quisquam velit minima similique laboriosam deserunt quod
+        omnis explicabo recusandae corrupti hic id aperiam nobis repellat inventore odio at dignissimos quibusdam, autem labore soluta, 
+        ducimus voluptates tempora! Reiciendis, sunt. Iste beatae aspernatur ut natus minus nulla dignissimos cumque ea delectus consequuntur
+        perferendis, sunt dolor consequatur aperiam laborum sit asperiores quos deserunt expedita blanditiis, corporis cum. Quam libero
+        laudantium alias porro quibusdam qui aut neque rerum rem. Nam voluptate dolor itaque esse fugit doloribus optio quas reiciendis
+        corrupti temporibus. Temporibus, dignissimos error architecto deleniti minima praesentium modi officiis quisquam aspernatur numquam
+        saepe natus provident iure possimus fugiat laboriosam cupiditate ex?
+    </p>
+    <script>
+        var scroll1=window.pageYOffset;
+        window.onscroll=function(){
+            var scroll2=window.pageYOffset;
+            if(scroll1>scroll2){
+                document.querySelector('nav').style.top="0";
+            }
+            else{
+                document.querySelector('nav').style.top="-100px";
+            }
+            scroll1=scroll2;
+        }
+    </script>
+</body>
+</html>
