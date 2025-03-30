@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://code.jquery.com/jquery-3.7.1.js" integrity="sha256-eKhayi8LEQwp4NKxN+CfCh+3qOVUtJn3QNZ0TciWLP4=" crossorigin="anonymous"></script>
+
+</head>
+<body>
+    <div class="center">
+        <div class="images">
+            <div class="slide img1"><img src="about.jpg"></div>
+            <div class="slide"><img src="contact.jpg"></div>
+            <div class="slide"><img src="feedback.jpg"></div>
+            <div class="slide"><img src="gallery.jpg"></div>
+            <div class="slide"><img src="home.jpg"></div>
+        </div>
+        <div class="buttons">
+            <a href="#" class="btn1 active"></a>
+            <a href="#" class="btn2"></a>
+            <a href="#" class="btn3"></a>
+            <a href="#" class="btn4"></a>
+            <a href="#" class="btn5"></a>
+        </div>
+    </div>
+    <script>
+        $(document).ready(function(){
+            $('.btn1').click(function(){
+                $('.img1').css("marginLeft","0");
+            })
+            $('.btn2').click(function(){
+                $('.img1').css("marginLeft","-20%");
+            })
+            $('.btn3').click(function(){
+                $('.img1').css("marginLeft","-40%");
+            })
+            $('.btn4').click(function(){
+                $('.img1').css("marginLeft","-60%");
+            })
+            $('.btn5').click(function(){
+                $('.img1').css("marginLeft","-80%");
+            })
+            $('a').click(function(){
+                $(this).addClass('active').siblings()
+                       .removeClass('active');
+            })
+        })
+    </script>
+</body>
+</html>
